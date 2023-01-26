@@ -14,7 +14,6 @@ public class SeleniumExceptions extends BaseTest {
     @Test
     public void demo1() {
         //NoSuchElementException
-
         browserHelper.openURL("https://demoqa.com/text-box");
         driver.findElement(By.id("userName1")).sendKeys("Hello World");
     }
@@ -22,7 +21,6 @@ public class SeleniumExceptions extends BaseTest {
     @Test
     public void noSuchWindowException() {
         //noSuchWindowException
-
         browserHelper.openURL("https://demoqa.com/text-box");
         browserHelper.switchToWindow(3);
         driver.switchTo().window("hello");
@@ -70,23 +68,10 @@ public class SeleniumExceptions extends BaseTest {
     }
 
 
-
     @Test
     public void webDriverExceptionTest() {
         //WevDriverException
          browserHelper.openURL("https://www.amazon/test.page");
     }
 
-    @Test
-    public void test1(){
-
-        browserHelper.openURL("https://demoqa.com/text-box");
-        WebElement link = driver.findElement(By.id("userName1"));
-        if(link.getAttribute("href") != null){
-            String linkUrl = link.getAttribute("href");
-            // do something with linkUrl
-        } else {
-            System.out.println("The link does not have an href attribute.");
-        }
-    }
 }
