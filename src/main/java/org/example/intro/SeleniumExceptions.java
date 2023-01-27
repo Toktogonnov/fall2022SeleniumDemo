@@ -72,6 +72,13 @@ public class SeleniumExceptions extends BaseTest {
     public void webDriverExceptionTest() {
         //WevDriverException
          browserHelper.openURL("https://www.amazon/test.page");
+
+
+
+
+
+
+
     }
 
 }
